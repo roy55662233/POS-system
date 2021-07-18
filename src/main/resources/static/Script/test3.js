@@ -1,0 +1,1 @@
+console.log(document.getElementById('menu_inputid1').innerText)

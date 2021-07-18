@@ -1,0 +1,203 @@
+body {
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("../img/backgorup.jpg");
+    background-repeat: no-repeat;
+    /* background-size: 1500px; */
+    background-size: cover;
+    background-position-y: 15%;
+    background-position-x: 50%;
+}
+
+.mylogin {
+    width: 400px;
+    padding: 40px;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.4);
+    text-align: center;
+}
+
+.mylogin h1 {
+    color: black;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.mylogin input[type="text"],
+.mylogin input[type="password"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid ivory;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: black;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+
+ ::placeholder {
+    /* CSS 3 �з� */
+    color: black;
+}
+
+.mylogin input[type="text"]:focus,
+.mylogin input[type="password"]:focus {
+    width: 280px;
+    border-color: navy;
+}
+
+#login {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid ivory;
+    padding: 14px 40px;
+    outline: none;
+    color: black;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+#login:hover {
+    background: ivory;
+}
+
+.mylogin input[type="submit"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid ivory;
+    padding: 14px 40px;
+    outline: none;
+    color: black;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.mylogin input[type="submit"]:hover {
+    background: ivory;
+    color: black;
+}
+
+button[type="button"] {
+    position: relative;
+    top: 0px;
+}
+
+.row {
+/*     border: black 4px solid; */
+}
+
+.col-md-4,
+.col-md-9,
+.ms-ayto,
+.col-md-3,
+.col-md-2,
+.col-md-6,
+.col-md-8,
+.col-4 {
+/*     border: gold 2px solid; */
+}
+
+.mylabel {
+    display: inline-block;
+/*     border: teal 2px solid; */
+    width: 150px;
+    text-align: right;
+    margin: 20PX 10px 0 50PX;
+}
+
+.mysign>div {
+/*     border: solid 2px black; */
+    margin: 0 auto;
+}
+
+#navbar>li {
+    display: inline-block;
+    margin: 5px;
+}
+
+/*Feature*/
+.container {
+                position: relative;
+                display: flex;
+                justify-items: center;
+                max-width: 1200px;
+                flex-wrap: wrap;
+                z-index: 1;
+            }
+            
+            .container .card {
+                position: relative;
+                width: 500px;
+                height: 400px;
+                margin: 30px;
+                box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+                border-radius: 15px;
+                background: rgba(255, 255, 255, 0.1);
+                overflow: hidden;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-top: 1px solid rgba(255, 255, 255, 0.5);
+                border-left: 1px solid rgba(255, 255, 255, 0.5);
+                backdrop-filter: blur(5px);
+            }
+            
+            .container .card .content {
+                padding: 20px;
+                text-align: center;
+                transform: translateY(100px);
+                opacity: 0;
+                transition: 0.5s;
+            }
+            
+            .container .card:hover .content {
+                transform: translateY(0px);
+                opacity: 1;
+            }
+            
+            .container .card .content h2 {
+                position: absolute;
+                top: -120px;
+                right: -150px;
+                font-size: 8rem;
+                color: rgba(0, 0, 0, 0.5);
+                pointer-events: none;
+            }
+            
+            .container .card .content h3 {
+                font-size: 1.8rem;
+                color: white;
+                z-index: 1;
+            }
+            
+            .container .card .content p {
+                font-size: 1rem;
+                color: white;
+                font-weight: bold;
+            }
+            
+            .container .card .content a {
+                position: relative;
+                display: inline-block;
+                padding: 8px 20px;
+                margin-top: 15px;
+                background: white;
+                color: black;
+                border-radius: 20px;
+                text-decoration: none;
+                font-weight: 500;
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+            }
